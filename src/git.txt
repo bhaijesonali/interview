@@ -35,3 +35,4 @@ git commit -m "first commit"
 git push origin master
 
 //to
+git push --set-upstream origin master

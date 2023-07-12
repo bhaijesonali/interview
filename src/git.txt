@@ -36,3 +36,19 @@ git push origin master
 
 //to
 git push --set-upstream origin master
+
+//
+git push
+
+//branches
+//to check branch
+git branch
+
+//to create branch
+git branch <branch name>
+
+//to switch to particular branch
+git checkout <branch name>
+
+//to create branch and switch
+git checkout -b <branch name>

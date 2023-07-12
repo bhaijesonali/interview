@@ -1,0 +1,142 @@
+#1 can we use react with anguler
+ans: yes , angular is a frame work and react is a librariy so we ca use 
+any librariy in framework 
+
+#2 profiler
+profiler checks parformance of application
+how much time specifec code or componet of application  rerender and how 
+much time it takes to rerender on this bases its check parformance
+
+#3  custom hooks vs function OF JS
+when we use js function we cant ues react hooks featuers
+but when we use react hooks we can use js function featuers
+
+#4 Library vs Framework
+ flow of code librariy we have to define 
+ but i librariy we cant use any framework
+ Framework already  have there flow of code 
+ we can use no of librariy in framework
+
+#5 Which lifecycle methods do not have hooks?
+Below are some of the methods that do not have any lifecycle method replacement 
+for hooks according to the react documentation:
+componentDidCatch ( )
+getSnapshotBeforeUpdate( )
+getDerivedStateFromError ( )
+
+#6 what is JXS
+JXS is js extensions which allow html to right inside js
+
+#7 context API is alternative of Redux 
+context api is not alternative of Redux we use context api to reduce problems
+of props drilling ex if we have no of component and we have to send top component
+data to bottom component we use context api
+for same case ww can also use Redux but we also use redux to save our all data 
+in globle scope and our we use it to keep logical part separate from UI and also 
+to manage prdictable state
+but we can use both together
+
+#8 map vs forEach
+map return the loop but forEach didnot return any loop
+ex
+let data = [1,2,3,4,5]
+let result = data.map((e)=>{
+return e
+})
+console.log(result)    //output =[1,2,3,4,5]
+
+let result = data.forEach((e)=>{
+return e
+})
+console.log(result)   //output = undefined
+
+#9 if we have ract application with redux if we refresh application then data 
+is preserved or removed
+ans:  if we have ract application with redux if we refresh application then data 
+removed it preserved only when we use redux persist
+
+#10 why we use state in react to save data?
+ans: in react we get data on ui only when component is rerender in state when data 
+is add state is updated component is automatic rerender and data is seen on ui
+or props also does same but props comes from outside of component 
+
+#11 featuers of react 18
+in react 17 when we put 4 component update on button click the component
+rerender 4 times but in react 18 when we put 4 component update on button 
+click the components rerender 1 times that incresse the speed of application
+
+#12  Do react js follow MVC
+ans: react js does not follow MVC (Model-View-Controller ) 
+react only show view from mvc ,model and Controller is not shown in react 
+
+#13 Why react js is so fast
+Ans: due to virtual dom 
+
+
+
+// 1 validate a image size and type
+const validate = (file) => {
+  if (file.size > 1000) {
+    console.error("Image size exceeds the maximum allowed size");
+  }
+  const valid = ["jpg", "png"];
+  if (!valid.includes(file.type)) {
+    console.error("Invalid file type");
+  }
+  if (file.size < 1000 && valid.includes(file.type)) {
+    console.log("valid image");
+  }
+};
+const file = {
+  size: 100,
+  type: "jpg",
+};
+validate(file);
+
+//2 Destructure Third element in another variable And rest in another variable
+function func(...args) {
+  const [, , third, ...rest] = args;
+
+  console.log(third); // Output: 3
+  console.log(rest); // Output: [4, 5]
+}
+
+func(1, 2, 3, 4, 5);
+
+//3
+(function () {
+  var a = (b = 5);
+})();
+// console.log(a); // Output: ReferenceError: a is not defined
+console.log(b); // Output: 5
+
+//4
+
+var x = 40;
+var y = "20";
+
+console.log(x + y); //4020
+console.log(x - y); //20
+
+//5
+
+function memoizedAddTo256() {
+  var cache = {};
+  console.log(cache);
+  return function (num) {
+    if (num in cache) {
+      console.log("cached value");
+      console.log(cache);
+      return cache[num];
+    } else {
+      cache[num] = num + 256;
+      console.log(cache);
+      return cache[num];
+    }
+  };
+}
+var memoizedFunc = memoizedAddTo256();
+
+memoizedFunc(20); // Normal return
+memoizedFunc(30); // Normal return
+memoizedFunc(20); // Cached return

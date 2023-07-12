@@ -1,0 +1,101 @@
+@@@ React
+#Explain folder structure for  React
+#What are the features of React
+#What is a virtual DOM?
+#What is Real DOM, virtual DOM and shadow DOM ?
+#What is reconciliation in react
+#What are Props?
+#What is State?
+#Difference between State and Props
+#Why not update state directly in react
+#One way binding vs Two way binding in frontend
+#What is Prop drilling
+#What is react Fragment?
+#What is stateful vs stateless
+#Difference between class and functional component.
+#why to prefer functional components than class components
+#Controlled vs Uncontrolled component
+#What is the difference between Elements and Component in React?
+#What is the use of key prop in list?
+#What are Events in react? 
+#what is event bubbling ,event capturing, event emitter , event propagation?
+#Different types of sythetic events?
+#What is HOC
+#How we can create multi page application in react?
+#How to pass data to other components using routes?
+#how pass  data child to parent component
+#Protected routing in ReactJS?
+#What is server side rendering (SSR) & client side rendering (CSR).
+#How you handle asynchronous code?
+#What is callback hell and how to overcome it?
+#What are promises? Difference between async/await and promises?
+#Axios vs fetch ?
+#What are interceptors in react?
+#Difference between PUT and PATCH request 
+#Difference between Authentication and Authorization
+#Difference between Local storage and Session storage
+#What is react fiber ?
+#What is Babel and Web-pack, tell the difference between them?
+#What is React portal?
+#What is an event loop and how its works?
+#What is the error boundary? How to use it?
+#what is code splitting ?
+#What is lazy loading and how to implement it?
+#What is Suspense in React?
+#Performance optimization for react if there are billions of data fetch
+#What is Webpack?
+#What is Web Vitals.
+
+
+
+@@@ Hooks
+#Explain different Hooks in React
+#Lifecycle methods in react
+#What are the rules of hook?
+#Difference between useReducer and useState
+#Explain lifecycle methods using useEffect  
+#How do we handle side effects in react?
+#What is useRef?
+#Difference between useMemo & use Callback
+#What are custom hooks with example?
+#Ways to prevent the unnecessary re-renders in react componnets
+#What is use of UseLayoutEffect?
+
+
+@@@ Redux
+#Redux flow
+#Why do we use redux thunk
+#What is useSelector ?
+
+@@@ Style
+#In react what are the diffrents ways to style  ?
+#What are styled-components?
+
+
+@@@ Implement
+#How will you change color on right side of screen by clicking on left side?
+#Write code for Counter application in react using closure?
+#Write a counter program in React JS, when we click on button count should be increased
+#Increase the counter automatically in React JS (Applicable when counter program is done)
+#Add dynamic CSS on selected card in map data
+#Create Accordion with custom logic in React
+#Implement pagination in react?
+#How to add infinite scrolling to the page without using any library in React?
+#Write a programme to Fetch API using Axios and Show into Table Format in React.
+#Scenario to use Modal as a re-useable component, how will to design and maintain folder structure for it?
+#search functionality with debouncing.
+#How to implement google search suggestions same as google view
+#Have to create a auto search in react which give the name of country in drop-down when we start putting values in input field without using Axios,have an local array.
+#how to validate form in react js
+#create username and password fields with submit button. In this form I have to disabled the button until both fields are filled. And when user click on the submit button I have to call onSubmit function with username and password.
+#fetch records from the API and show in the table. also handle the pagination and disabled the pagination when user in on last and first page of the table.
+#fetch the records by using debouncing and call api usine axios and show in the autocomplete input. And when the user select any option we have to show in alter box.
+#implement react component show data with loader
+#How to hit the API call immediately after scrolled down the page?
+#How you can run multiple api at a time
+
+@@@ Algorithm
+const arr=[1,2,3,4]ouput:[1,4,9,16] using map and forEach
+const arr=[1,2,3,4] ouput:[2*3*4,1*3*4,1*2*4,1*2*3]  implementation & time complexity
+Given const arr = [1, 2, 3, 4, 5, 6, 8, 1, 2, 3], find the occurrence of each respective element.
+Const obj = {a:1, b:{c:1}}, console.log(a, b, c) should be (1, {c:1}, 1)

@@ -1,0 +1,21 @@
+// //component life cycle
+
+// Mounting Phase:
+
+// constructor(): This method is called when an instance of the component is being created. It is used to initialize state and bind event handlers.
+// static getDerivedStateFromProps(props, state): This static method is invoked before rendering and is used to update the component's state based on changes in the props.
+// render(): This method is responsible for generating the component's HTML markup or rendering other React components.
+// componentDidMount(): This method is called immediately after the component is rendered to the DOM. It is used for performing side effects, such as data fetching or setting up event listeners.
+
+// Updating Phase:
+// static getDerivedStateFromProps(props, state): Similar to the mounting phase, this method is called before rendering during the update phase. It allows updating the component's state based on changes in the props.
+// shouldComponentUpdate(nextProps, nextState): This method is invoked before the update to determine if the component should re-render. It allows implementing optimizations by preventing unnecessary re-renders.
+// render(): If shouldComponentUpdate() returns true, the render method is called to update the component's UI.
+// componentDidUpdate(prevProps, prevState): This method is called after the component is updated in the DOM. It is used for performing side effects based on changes in the component's props or state.
+
+// Unmounting Phase:
+// componentWillUnmount(): This method is called just before the component is removed from the DOM. It is used for performing cleanup tasks such as unsubscribing from event listeners or clearing timers.
+
+// Error Handling Phase:
+// static getDerivedStateFromError(error): This static method is used to handle errors in child components. It allows rendering an alternative UI when an error occurs.
+// componentDidCatch(error, info): This method is used to log and handle errors that occur in the component's child tree

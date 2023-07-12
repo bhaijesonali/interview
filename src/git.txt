@@ -10,7 +10,26 @@ git config user.email
 
 git init
 
+//to add remote origin
+git remote add origin https://github.com/bhaijesonali/interview.git
+
+//to check remote origin
+git remote -v
+
+//to check
 git status
 
+//flow 
+add -> commit -> push
+
+//to add single file
 git add <file name>
 
+//to add all file
+git add .
+
+//to commit changes
+git commit -m "first commit"
+
+//to push
+git push origin master
